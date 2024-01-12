@@ -12,7 +12,7 @@ function Model() {
 export default function Home() {
   return (
     <div style={{ height: "100vh", width: "100vw", background: "skyblue" }}>
-      <Canvas camera={{ position: [20, 10, -15] }}>
+      <Canvas camera={{ position: [20, 12, -15] }}>
         <ambientLight intensity={1.0} />
         <spotLight
           position={[10, 10, 10]}
@@ -27,7 +27,8 @@ export default function Home() {
         <OrbitControls
           enableZoom={false}
           enablePan={false}
-          maxPolarAngle={Math.PI / 2}
+          maxPolarAngle={Math.PI / 3}
+          minPolarAngle={Math.PI / 3}
         />
       </Canvas>
     </div>
